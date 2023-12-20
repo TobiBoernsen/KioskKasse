@@ -1,0 +1,31 @@
+﻿<Window x:Class="KassenSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:KassenSystem.Steuerelemente"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1400">
+    <Grid Margin="0,0,-8,2">
+        <Canvas Width="900" Height="530" Margin="10,65,479,276">
+            <uc:MenuDisplay Menus="e_Essen" x:Name="Essen" Height="530" Width="900"/>
+            <uc:MenuDisplay Menus="e_Getränke" x:Name="Getränke" Height="530" Width="900" />
+            <uc:MenuDisplay Menus="e_Desserts" x:Name="Dessert" Height="530" Width="900" />
+            <uc:MenuDisplay Menus="e_Beilagen" x:Name="Beilagen" Height="530" Width="900"/>
+        </Canvas>
+        <uc:RechnungsManager x:Name="m_RechnungsManager" Width="450" Margin="932,10,10,10"  ></uc:RechnungsManager>
+        <Button FontSize="25" Name="EssenToggleButton" Content="Essen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" Margin="10,10,0,0" Click="MenuToggle"/>
+        <Button FontSize="25" Name="GetränkeToggleButton" Content="Getränke" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" Margin="215,10,0,0" Click="MenuToggle"/>
+        <Button FontSize="25" Name="DessertToggleButton" Content="Dessert" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" Margin="625,10,0,0" Click="MenuToggle"/>
+        <Button FontSize="25" Name="BeilageToggleButton" Content="Beilagen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="50" Margin="420,10,0,0" Click="MenuToggle"/>
+     <!--   <Button FontSize="25" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="288,686,0,0" Click="DecreaseProductCount"/>-->
+     <!--   <Button FontSize="25" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Margin="393,686,0,0" RenderTransformOrigin="1.72,0.33" Click="IncreaseProductCount"/> -->
+     <!--   <Button FontSize="25" Content="Hinzufügen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="285" Height="94" Margin="628,642,0,0" Click="Button_Click"/>-->
+        <TextBlock Name="CurrentProductText" FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="16,628,0,0" Height="50" Width="300"/>
+      <!--  <TextBlock Name="ProductCount" FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Margin="443,628,0,0" Height="50" Width="50"/> -->
+      <!--  <TextBlock FontSize="25" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Anzahl:" VerticalAlignment="Top" Margin="328,628,0,0" Height="50" Width="87"/> -->
+        <RadioButton Name="SizeSmall" Content="S" FontSize="40"  Margin="18,702,-18,-701" Checked="SizeSmall_Checked"/>
+        <RadioButton Name="SizeMedium" Content="M" FontSize="40" Margin="72,702,-72,-701" Checked="SizeMedium_Checked"/>
+        <RadioButton Name="SizeLarge" Content="L" FontSize="40" Margin="134,702,-134,-701" Checked="SizeLarge_Checked"/>
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="KassenSystem.Abrechnung"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KassenSystem"
+        mc:Ignorable="d"
+        Title="Abrechnung" Height="902.049" Width="400">
+    <Grid Margin="0,0,0,-91">
+        <TextBox FontSize="40" Name="GesamtPreisText"  HorizontalAlignment="Left" Height="58" Margin="29,60,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="323"/>
+        <Label FontSize="24" Content="Gesamtkosten" HorizontalAlignment="Left" Height="43" Margin="29,12,0,0" VerticalAlignment="Top" Width="323"/>
+        <TextBox FontSize="40" Name="EingezahlterBetrag" HorizontalAlignment="Left" Height="58" Margin="29,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="323"/>
+        <Label FontSize="24" Content="Eingezahlterbetrag" HorizontalAlignment="Left" Height="43" Margin="29,123,0,0" VerticalAlignment="Top" Width="323"/>
+        <TextBox FontSize="40" Name="Wechselgeld" HorizontalAlignment="Left" Height="58" Margin="29,282,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="323"/>
+        <Label FontSize="24" Content="Wechselgeld" HorizontalAlignment="Left" Height="43" Margin="29,234,0,0" VerticalAlignment="Top" Width="323"/>
+        <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="262,475,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="146,475,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="29,475,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="262,570,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="146,570,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="29,570,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="262,665,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="146,665,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="29,665,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="End" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="262,760,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="146,760,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="," HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="29,760,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="CE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="262,380,0,0" Height="90" Click="Button_Click"/>
+        <Button Content="C" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="29,380,0,0" Height="90" Click="Button_Click"/>
+
+    </Grid>
+</Window>
